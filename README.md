@@ -18,3 +18,5 @@ While encountering those challenges we made several attempts in model trainig, o
 Even though dataset had various pictures in each class and pictures were of a good quality, it still had a disadvantage: many classes contained too little instances. We made decision to eliminate some plants classes from the dataset, because the majority had only 450 images on average (a few contained only 100 though). Given that there is no wonder the model struggled to learn, because the amount of data was not sufficient and plants generally look very much alike. 
 
 This is why we spent some time on manual work with the dataset: we left only 13 classes that contained the biggest amount of pictures. We made another attempt of training the model on a reduced dataset using much more powerful CPU. We run totally 195 epochs and reached 85% accuracy on test data, which was much better. This attempt is documanted in **attemptSecond.ipynb**.
+
+Then we pursued to build an IOS mobile app. Mobile app identifies the plant from the picture made by a user with the help of the trained model.
