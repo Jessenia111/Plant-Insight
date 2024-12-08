@@ -3,6 +3,9 @@
 **Dataset used for final training:**
 https://drive.google.com/drive/folders/1TudqpfLC2QC_5zFD_cS1wBnoewUfgTcO?usp=drive_link
 
+**Link to GitHub Swift App repository:**
+https://github.com/Jessenia111/ToxicFlowerApp/blob/main/ToxicFlower/ViewController.swift
+
 **The workflow of training:**
 
 During training we faced several main issues:
