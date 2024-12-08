@@ -3,9 +3,6 @@
 **Dataset used for final training:**
 https://drive.google.com/drive/folders/1TudqpfLC2QC_5zFD_cS1wBnoewUfgTcO?usp=drive_link
 
-**Link to GitHub Swift App repository:**
-https://github.com/Jessenia111/ToxicFlowerApp
-
 **The workflow of training:**
 
 During training we faced several main issues:
@@ -20,3 +17,6 @@ Even though dataset had various pictures in each class and pictures were of a go
 This is why we spent some time on manual work with the dataset: we left only 13 classes that contained the biggest amount of pictures. We made another attempt of training the model on a reduced dataset using much more powerful CPU. We run totally 195 epochs and reached 85% accuracy on test data, which was much better. This attempt is documanted in **attemptSecond.ipynb**.
 
 Then we pursued to build an IOS mobile app. Mobile app identifies the plant from the picture made by a user with the help of the trained model.
+
+**Link to GitHub Swift App repository:**
+https://github.com/Jessenia111/ToxicFlowerApp
