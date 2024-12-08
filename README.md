@@ -1,8 +1,9 @@
 # Plant-Insight
 
 **The workflow of training:**
+
 During training we faced several main issues:
-1. Variety of incompatibilities
+1. A variety of incompatibilities
 2. Not enough CPU/GPU power
 3. Imbalanced dataset of not the greatest quality
 
