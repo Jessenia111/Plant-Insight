@@ -1,5 +1,8 @@
 # Plant-Insight
 
+**Dataset used for final training:**
+https://drive.google.com/drive/folders/1TudqpfLC2QC_5zFD_cS1wBnoewUfgTcO?usp=drive_link
+
 **The workflow of training:**
 
 During training we faced several main issues:
