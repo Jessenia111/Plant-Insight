@@ -4,7 +4,7 @@
 https://drive.google.com/drive/folders/1TudqpfLC2QC_5zFD_cS1wBnoewUfgTcO?usp=drive_link
 
 **Link to GitHub Swift App repository:**
-https://github.com/Jessenia111/ToxicFlowerApp/blob/main/ToxicFlower/ViewController.swift
+https://github.com/Jessenia111/ToxicFlowerApp
 
 **The workflow of training:**
 
