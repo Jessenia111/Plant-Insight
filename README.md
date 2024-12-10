@@ -27,6 +27,6 @@ We decided to try another way of training. We manually added five more classes t
 
 **Eventually** we decided to stick to our second model and present it on the poster session: **attemptSecond.ipynb**. Its accuracy is 85% and precision is 76%, it identifies 14 plant types and in practice works well (using mobile app). 
 
-Even though we knew that the poster was already made and we were to present our second model, we still wanted to try to achieve higher results in training. We used different methods than used previously. This attempt is documented it **attemptFourth.ipynb**.
+Even though we knew that the poster was already made and we were to present our second model, we still wanted to try to achieve other results in training. We used additionaly early stopping. This attempt is documented it **attemptFourth.ipynb**.
 
 
