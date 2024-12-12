@@ -9,13 +9,13 @@ Cat-Safe Plant Identifier: A ML-based iOS Application for Detecting Toxic Plants
 
 **Motivation of the project:**
 
- With the rise in pet ownership, particularly among cat owners, ensuring the safety of
- household plants has become a critical concern. Many common indoor plants can be
- toxic to cats, leading to serious health complications or even fatality if ingested.
- Despite the risk, pet owners often lack awareness or tools to identify whether a
- specific plant is for their feline companions. This project addresses the issue by
- developing a machine learning-based Swift application that identifies plant species
- from user-uploaded images and indicates their toxicity to cats
+     With the rise in pet ownership, particularly among cat owners, ensuring the safety of
+     household plants has become a critical concern. Many common indoor plants can be
+     toxic to cats, leading to serious health complications or even fatality if ingested.
+     Despite the risk, pet owners often lack awareness or tools to identify whether a
+     specific plant is for their feline companions. This project addresses the issue by
+     developing a machine learning-based Swift application that identifies plant species
+     from user-uploaded images and indicates their toxicity to cats
 
 **Business Goals:**
 
