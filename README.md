@@ -45,7 +45,7 @@ https://drive.google.com/drive/folders/1TudqpfLC2QC_5zFD_cS1wBnoewUfgTcO?usp=dri
 
 
 
-**The workflow of training and contents of repository:**
+# The workflow of training and contents of repository:
 
 During training, we encountered several major issues:
 
@@ -71,7 +71,7 @@ Ultimately, we decided to stick with the second model, documented in **attemptSe
 Although the second model was selected for the poster session, we continued experimenting. In our fourth attempt, documented in **attemptFourth.ipynb**, we introduced early stopping. However, this did not result in significant improvements.
 
 
-**Way to replicate the same analysis that the authors have done:**
+# Way to replicate the same analysis that the authors have done:
 
 Programming language: Python maximum version 3.9 (to be compatible with Tensorflow 2.6.0)
     
