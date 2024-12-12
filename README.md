@@ -2,6 +2,7 @@
 
 **Project Title:** PLANT INSIGHT
 Cat-Safe Plant Identifier: A ML-based iOS Application for Detecting Toxic Plants
+
 **Team Members:**
  1. Milena Petrova
  2. Jessenia Tsenkman
