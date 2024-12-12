@@ -27,15 +27,15 @@ Primary goal:
      
 Secondary Goals:
 
-   ● Enhance pet safety by providing reliable information about plant
-    toxicity.
+     ● Enhance pet safety by providing reliable information about plant
+     toxicity.
      
-   ● Educate users on plant care and safety for pets.
+     ● Educate users on plant care and safety for pets.
    
-   ● Gainpractical experience in data preprocessing, model training, and
+     ● Gainpractical experience in data preprocessing, model training, and
      integration with iOS applications.
      
-   ● Create a scalable framework that can be adapted for future projects
+     ● Create a scalable framework that can be adapted for future projects
      involving different types of data or applications (e.g. extended to
      include toxicity information for other pets or additional plant species.
 
