@@ -22,13 +22,17 @@ Business Goals:
    ● Primary goal: Develop a robust machine learning model and prototype
      application capable of accurately identifying plant species from user-uploaded
      images and determining their toxicity to cats.
+     
 Secondary Goals:
 
    ● Enhance pet safety by providing reliable information about plant
      toxicity.
+     
    ● Educate users on plant care and safety for pets.
+   
    ● Gainpractical experience in data preprocessing, model training, and
      integration with iOS applications.
+     
    ● Create a scalable framework that can be adapted for future projects
      involving different types of data or applications (e.g. extended to
      include toxicity information for other pets or additional plant species.
