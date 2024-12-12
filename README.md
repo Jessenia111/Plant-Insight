@@ -28,7 +28,7 @@ Primary goal:
 Secondary Goals:
 
    ● Enhance pet safety by providing reliable information about plant
-     toxicity.
+    toxicity.
      
    ● Educate users on plant care and safety for pets.
    
