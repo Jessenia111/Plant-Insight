@@ -5,28 +5,27 @@ https://drive.google.com/drive/folders/1TudqpfLC2QC_5zFD_cS1wBnoewUfgTcO?usp=dri
 
 **The workflow of training:**
 
-During training we faced several main issues:
-1. Incompatibilities
-2. Not enough CPU/GPU power
-3. Imbalanced dataset of not the greatest quality
+During training, we encountered several major issues:
 
-The first week of making this project we would rather call experimental. For some time we could not install tensorflow directly to the coumputer because of incompatibilities with python version and etc. So we started looking for solutions to train the model in a cloud-based platform, this is how we got exposed to Google Collab. We experimented with VGG16 pre-trained moodel, but then decided to stck to ImageNetV2 model. During training we even ended up paying 11 euros to gain more GPU power, because training on CPU in there was too long and inefficient, let alone saying that sometimes connection got lost and all the process of training was gone with it. 
+1. Icompatibilities
+2. Insufficient CPU/GPU power
+3. An imbalanced dataset of suboptimal quality
 
-Majority of these attempts came in vail, but we still decided to document one of them here in the notebook **attemptFirst.ipynb**. As can be seen, model training took there many hours. We did approximately 20 epochs (except for those that were gone due to connection losses), solely running them took about 20 hours. Test accuracy was 70%, but confusion matrix showed that model struggled to make difference between various plants (there were 47 types of them). 
+The first week of the project was experimental. Initially, we could not install TensorFlow directly on the computer due to incompatibilities with the Python version. To address this, we explored cloud-based platforms and started using Google Colab. We experimented with the VGG16 pre-trained model but eventually switched to the ImageNetV2 model. During training, we purchased additional GPU power, as training on a CPU was slow and inefficient. Unfortunately, connection losses on Colab caused us to lose progress multiple times.
 
-Then we pursued to build an IOS mobile app. Mobile app identifies the plant from the picture made by a user with the help of a  trained model. We realised that to embed the trained model into the app, we neede to convert it to the Core Ml model. With the version of tensorflow 2.17 we previously tried the training it was not possible. So we again faced problems with incompatibilities.
+Despite these challenges, we documented one of our attempts in attemptFirst.ipynb. Training took around 20 hours for approximately 20 epochs (excluding lost progress). The test accuracy reached 70%, but the confusion matrix showed that the model struggled to distinguish between the 47 plant types in the dataset.
 
-Even though dataset had various pictures in each class and pictures were of a relatively good quality, it still had a disadvantage: classes in general contained a few instances. Given that plants are all green and have leafs, training a classifier on 350 pictures and in some cases even fewer was a struggle. We made decision to eliminate some plants classes from the dataset, because the majority had only 450 images in total (a few contained only 100 though). Given that there is no wonder the model struggled to learn, because the amount of data was not sufficient and plants generally look very much alike. 
-
-This is why we spent some time on manual work with the dataset: we left only 14 classes that contained the biggest amount of pictures. We made another attempt of training the model. We found a better recource of installing tensorflow 2.6, the version we needed to convert the model to Core Ml. Finally resolving the incompatibilities did not seem to be an uphill battle. We managed to train the model once again on a reduced dataset using much more powerful CPU. We ran 195 epochs in total and reached 85% accuracy on test data with 76% precision, which was so much better than everything we achieved before. This attempt is documanted in **attemptSecond.ipynb**.
+Next, we worked on building an iOS mobile app. The app uses the trained model to identify plants from user photos. To embed the model into the app, we needed to convert it to a Core ML format. However, this was not possible with TensorFlow version 2.17, which led to further compatibility issues.
 
 **Link to GitHub Swift App repository:**
 https://github.com/Jessenia111/ToxicFlowerApp
 
-We decided to try another way of training. We manually added five more classes to our existing dataset (using another dataset from Kaggle) resulting to the dataset of 19 classes. New added classes had around 900 images each, which made dataset more imbalanced. We tried to experiment with gradually unfreezeing layers and adding class weights to address issue with imbalanced dataset. This attempt is documented it **attemptThird.ipynb**. We reached even higher accuracy - 89%, but confusion matrix showed that model very much struggled with identifying plants. In practice using this model in the built mobile app, it almost never gave the right answer. 
+Although the dataset contained various high-quality images, most classes had too few samples. For example, some classes had only 100 images, while the majority had a maximum of 450. This small dataset size, combined with the similarity between plant types, made training a classifier challenging. To address this, we manually reduced the dataset to 14 classes with the largest number of images. We then retrained the model using TensorFlow 2.6, resolving compatibility issues and using a more powerful CPU. This attempt, documented in **attemptSecond.ipynb**, ran for 195 epochs and achieved 85% test accuracy — better than earlier results.
 
-**Eventually** we decided to stick to our second model and present it on the poster session: **attemptSecond.ipynb**. Its accuracy is 85% and precision is 76%, it identifies 14 plant types and in practice works well (using mobile app). 
+We also tried expanding the dataset by adding five new classes (from another Kaggle dataset), increasing the total to 19 classes. The newly added classes had around 900 images each, making the dataset more imbalanced. To address this, we experimented with gradually unfreezing layers and adding class weights. This attempt, documented in **attemptThird.ipynb**, achieved 89% accuracy. However, the confusion matrix revealed that the model still struggled to differentiate between plants, and in practice, the app rarely provided correct predictions.
 
-Even though we knew that the poster was already made and we were to present our second model, we still wanted to try to achieve other results in training. During fourth attempt we used additionaly early stopping. This attempt is documented it **attemptFourth.ipynb**.
+Ultimately, we decided to stick with the second model, documented in **attemptSecond.ipynb**. This model achieved 85% accuracy, successfully identifying 14 plant types and working reliably in the mobile app.
+
+Although the second model was selected for the poster session, we continued experimenting. In our fourth attempt, documented in **attemptFourth.ipynb**, we introduced early stopping. However, this did not result in significant improvements.
 
 
