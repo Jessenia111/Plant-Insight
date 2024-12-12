@@ -19,7 +19,8 @@ Cat-Safe Plant Identifier: A ML-based iOS Application for Detecting Toxic Plants
 
 Business Goals:
 
-   ● Primary goal: Develop a robust machine learning model and prototype
+Primary goal: 
+     ● Develop a robust machine learning model and prototype
      application capable of accurately identifying plant species from user-uploaded
      images and determining their toxicity to cats.
      
