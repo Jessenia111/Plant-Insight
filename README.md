@@ -63,12 +63,13 @@ Ultimately, we decided to stick with the second model, documented in **attemptSe
 
 Although the second model was selected for the poster session, we continued experimenting. In our fourth attempt, documented in **attemptFourth.ipynb**, we introduced early stopping. However, this did not result in significant improvements.
 
+
 **Way to replicate the same analysis that the authors have done:**
 
-    Programming language: Python maximum version 3.9 (to be compatible with Tensorflow 2.6.0)
+Programming language: Python maximum version 3.9 (to be compatible with Tensorflow 2.6.0)
     
-    Requiered dependencies: Tensorflow 2.6.0, numpy, SciPy, Pillow, keras, sklearn, protobuf, coremltools, matplotlib, seaborn.
+Requiered dependencies: Tensorflow 2.6.0, numpy, SciPy, Pillow, keras, sklearn, protobuf, coremltools, matplotlib, seaborn.
     
-    Install Tensorflow 2.6.0. Go to Anaconda; create new environment with name tensorflow, choose python version below 3.9, then run the environment in terminal. Install tensorflow by running command: pip install tensorflow --version 2.6.0. After installing tensorflow, create notebook and insert the code from attemptSecond.ipynb. Download the test, train and validation datasets to your local machine; change the paths to train, test and val datasets in the code to the directories on your local machine. Ensure you have all the dependencies listed above. If no, you can install them right in the notebook with pip install. Change the paths to directories where you want to save trained model (model_save_path, mlmodel_save_path). Then run the code.
+Install Tensorflow 2.6.0. Go to Anaconda; create new environment with name tensorflow, choose python version below 3.9, then run the environment in terminal. Install tensorflow by running command: pip install tensorflow --version 2.6.0. After installing tensorflow, create notebook and insert the code from attemptSecond.ipynb. Download the test, train and validation datasets to your local machine; change the paths to train, test and val datasets in the code to the directories on your local machine. Ensure you have all the dependencies listed above. If no, you can install them right in the notebook with pip install. Change the paths to directories where you want to save trained model (model_save_path, mlmodel_save_path). Then run the code.
     
-    After running the code, you will have same trained model in format .h5 and .mlmodel saved to directories you specified.
+After running the code, you will have same trained model in format .h5 and .mlmodel saved to directories you specified.
